@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "Nekst-Regular";
+  src: url("../fonts/Nekst-Regular.ttf");
+}
+
+body {
+  font-family: Nekst-Regular, sans-serif;
+}
+
+.container {
+  background: #1E1F28;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  padding-bottom: 94px;
+}
+
+.logo-image {
+  margin: 25px 90px 70px;
+}
+
+.content-wrap {
+  background: #27272F;
+  border-radius: 5px;
+  width: 520px;
+  margin: 0 auto;
+  padding: 56px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.rating-text {
+  font-family: Nekst-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 32px;
+}
+
+.amount-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.amount-wrap {
+  display: flex;
+}
+
+.title-text {
+  font-size: 14px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.amount-qty {
+  font-size: 14px;
+  line-height: 120%;
+  text-decoration-line: underline;
+  color: #07F2B4;
+  margin-left: 8px;
+}
+
+.timer-block {
+  font-size: 14px;
+  line-height: 120%;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+.timer-image {
+  margin-right: 6px;
+}
+
+.payment-block {
+  margin-top: 22px;
+  width: 100%;
+}
+
+.address-wrap {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 8px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-input {
+  background: #27272F;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #07F2B4;
+  width: 100%;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.copy-button {
+  background-image: url("../images/copy.svg");
+  background-repeat: no-repeat;
+  padding-right: 12px;
+}
+
+.address-wrap:hover {
+  border: 1px solid rgba(12, 200, 152, 0.4);
+}
+
+.address-wrap:hover .copy-button {
+  background-image: url("../images/copy-green.svg");
+}
+
+.fees-text {
+  font-size: 14px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-top: 22px;
+}
+
+.payment-id {
+  margin-top: 22px;
+  font-size: 14px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.accordion-wrap {
+  margin-top: 32px;
+}
+
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.5);
+  transition: .4s;
+  cursor: pointer;
+}
+
+.accordion-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+  font-size: 14px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.accordion-arrow {
+  transition: .4s;
+}
+
+.accordion-arrow--active {
+  transform: rotate(180deg);
+  transition: .4s;
+}
+
+.accordion-block:last-child {
+  margin-top: 20px;
+}
+
+.accordion-block:first-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 20px;
+}
+
+.warning-header {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+.overdue-description {
+  font-size: 14px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+}
+
+.overdue-text {
+  font-size: 14px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 20px;
+}
+
+.overdue-list {
+  padding: 0 0 0 15px;
+  margin: 0;
+}
+
+.success-header {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #07F2B4;
+  margin-top: 13px;
+}
+
+.success-description {
+  font-size: 14px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    padding-bottom: 0;
+  }
+
+  .content-wrap {
+    background: #1E1F28;
+    width: 100%;
+    padding: 0 32px 30px;
+  }
+
+  .logo-image {
+    width: 115px;
+    margin: 13px 32px 40px;
+  }
+
+  .timer-block {
+    display: none;
+  }
+
+  .copy-button {
+    display: none;
+  }
+
+  .address-wrap {
+    padding: 16px;
+    background: #27272F;
+  }
+
+  .address-input {
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  .rating-text {
+    margin-top: 40px;
+  }
+
+  .amount-block {
+    margin-top: 40px;
+  }
+
+  .accordion-wrap {
+    margin-top: 40px;
+  }
+
+  .success-wrap {
+    margin-top: 130px;
+  }
+}
